@@ -13,14 +13,14 @@ The application processes timestamp pairs, computes the differences in seconds, 
 pip install fastapi uvicorn'''
 
 
-#Start the FastAPI Application:
+## Start the FastAPI Application:
 
 Use uvicorn to run the FastAPI app locally:
 
 uvicorn main:app --reload
 
 
-#To test the API,
+## To test the API,
 you can use the following PowerShell command to send a POST request to the /compute-differences endpoint with the timestamp pairs in the request body.
 
 Open PowerShell and run the following script:
@@ -30,5 +30,5 @@ Open PowerShell and run the following script:
 > (Invoke-WebRequest -Uri 'http://127.0.0.1:8000/compute-differences' -Method POST -Headers @{ "Content-Type" = "text/plain" } -Body $body).content
 
 
-#The expected output will be:
+## The expected output will be:
 ["25200","347067000"]
