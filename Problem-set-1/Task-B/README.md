@@ -25,10 +25,7 @@ you can use the following PowerShell command to send a POST request to the /comp
 
 Open PowerShell and run the following script:
 
-> $body = "2nSun 10 May 2015 13:54:36 -0700nSun 10 May 2015 13:54:36 -0000nSat 02 May 2015 19:54:36 +0530nFri 01 May 2015 13:54:36 -0000"
-
-> (Invoke-WebRequest -Uri 'http://127.0.0.1:8000/compute-differences' -Method POST -Headers @{ "Content-Type" = "text/plain" } -Body $body).content
-
+(Invoke-WebRequest -Uri "http://127.0.0.1:8000/compute-differences"  -Method POST  -Headers @{"Content-Type"="text/plain"}  -Body "2`nSun 10 May 2015 13:54:36 -0700`nSun 10 May 2015 13:54:36 -0000`nSat 02 May 2015 19:54:36 +0530`nFri 01 May 2015 13:54:36 -0000").content
 
 ## The expected output will be:
 ["25200","88200"]
