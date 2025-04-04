@@ -9,8 +9,8 @@ The application processes timestamp pairs, computes the differences in seconds, 
 - Python 3.11+
 - Install the required Python packages:
 
-```bash
-pip install fastapi uvicorn'''
+
+pip install fastapi uvicorn
 
 
 ## Start the FastAPI Application:
