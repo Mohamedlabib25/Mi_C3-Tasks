@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app-1:
+    build: .
+    ports:
+      - "8001:8000"  # First container runs on port 8001
+
+  app-2:
+    build: .
+    ports:
+      - "8002:8000"  # Second container runs on port 8002
