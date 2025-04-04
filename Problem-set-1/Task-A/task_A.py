@@ -29,7 +29,10 @@ def parse_timestamp(timestamp):
 
 def compute_time_differences(text_input: str):
     """Compute absolute time differences in seconds for valid timestamp pairs."""
-    lines = text_input.strip().split("\n")
+    if isinstance(text_input, list):  # If the input is a list, join it into a string
+        text_input = "\n".join(text_input)
+    
+    lines = text_input.split("\n")
     
     T = int(lines[0])  # Number of test cases
     results = []
