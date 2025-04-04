@@ -13,8 +13,8 @@ This application exposes a FastAPI-based REST API to compute the absolute time d
 ### 1. Clone the Repository
 
 ```bash
-git clone https://your-repo-url.git
-cd your-repo-folder
+git clone the repo
+
 
 
 ## Build the Docker Images
