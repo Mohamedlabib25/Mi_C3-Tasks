@@ -53,4 +53,5 @@ call_agg['isVideo'] = call_agg['bitrate_kbps'] > 200
 
 # === Step 12: Final Output Columns ===
 final_df = call_agg[['msisdn', 'domain', 'duration_sec', 'fdr_count', 'bitrate_kbps', 'isAudio', 'isVideo']]
-print(final_df)
+final_df.to_excel("final_output.xlsx", index=False, header=True)
+
