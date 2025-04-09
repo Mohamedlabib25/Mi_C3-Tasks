@@ -53,4 +53,4 @@ A final DataFrame is printed and includes:
 
 Optionally, you can export to Excel or CSV:
 ```python
-final_df.to_csv('output.csv', index=False)
+final_df.to_excel("final_output.xlsx", index=False, header=True)
